@@ -1,38 +1,170 @@
-.App {
+/* Home Page*/
+.hero-block{
+  padding-top: 0.5%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-block h1{
+  font-size: 55px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link:hover {
+  color: #ff893c !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: white;
+}
+
+h1{
+  font-size: 45px !important;
+  font-weight: 600 !important;
+  color: green;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 600 !important;
+
+}
+
+p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+@media all and (max-width:994px) {
+  .carousel-teaxt h1 {font-size: calc(30px + (34 - 30) * ((100vw - 320px)/(1600 - 320))) !important;}
+
+}
+@media all and (max-width:628px) {
+  .carousel-teaxt h1 {font-size: calc(20px + (24 - 20) * ((100vw - 320px)/(1600 - 320))) !important;}
+  .carousel-teaxt p {font-size: calc(15px + (19 - 15) * ((100vw - 320px)/(1600 - 320))) !important;}
+
+}
+@media all and (max-width:460px) {
+  .carousel-teaxt h1 {font-size: calc(20px + (24 - 20) * ((100vw - 320px)/(1600 - 320))) !important;}
+  .carousel-teaxt p {font-size: calc(13px + (22 - 13) * ((100vw - 320px)/(1600 - 320))) !important;}
+
+}
+#more{
+  padding: 6% 6% 6% 6% !important;
+  background-color: #007d00;
+  margin-bottom: 5%;
+  margin-top: 50px;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#more h1{
+  color: white;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.attractions h1{
+  text-align: left !important;
+}
+
+.attractions h4 a{
+  color: #07aba0;
+  text-decoration: none;
+}
+
+.attractions h4 a:hover{
+  color: #d87400;
+}
+
+/* Dropdown menu in home page*/
+.grid{
+  display: grid;
+}
+select { 
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #d87400;
+  border-style: solid;
+  border-radius: 5px;
+  justify-self: center;
+  border-color: #d87400;
+}
+/*Folks pages */
+
+.name-description{
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  margin-bottom: 3%;
+  border-style: none !important;
+}
+.name-description div div div{
+  padding: 1% 8% 0% 8% !important;
+}
+.name-description div div div h1{
+  margin-bottom: 4%;
+}
+.name-description div div div div{
+  text-align: left;
+  font-size: calc(13px + (17 - 13) * ((100vw - 320px)/(1600 - 320)));;
+}
+@media all and (max-width:1400px) {
+  .name-description .row {display: block;}
+  .name-description .col2:nth-child(2) { order: 1 }
+  .name-description .col2:nth-child(1) { order: 2 }
+}
+/*Privacy*/
+#privacy{
+  padding: 3% 3% 3% 3% !important;
+}
+
+/* Footer*/
+.footer{
+  padding: 1% 15% 0% 15% !important;
+  display: grid;
+  justify-self: center;
+  background-color: #f8f9fb;
+}
+
+.anchors{
+  text-align: left !important;
+}
+.anchors-contact{
+  text-align: left !important;
+  padding-left: 150px!important;
+}
+.anchors h5{
+  color: #ff893c;
+}
+.col-md-6 h5{
+  color: #ff893c;
+}
+.anchors-contact h5{
+  color: #ff893c;
+}
+.anchors ul li a, .anchors-contact ul li a{
+  text-decoration: none !important;
+  text-align: left !important;
+  color: var(--bs-body-text-align);
+}
+.anchors ul li a:hover, .anchors-contact ul li a:hover{
+  color: #ff893c;
+}
+
+@media all and (max-width:940px) {
+  .footer{display: grid !important;}
+  .footer div{text-align: center !important;width: 100% !important;}
+  .anchors-contact{padding-left: 0px !important;}
+  .footer div:nth-child(2) { order: 1 }
+  .footer div:nth-child(1) { order: 2 }
+  .footer div:nth-child(3) { order: 3 }
+
 }
